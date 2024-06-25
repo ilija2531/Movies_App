@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cineflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/sliki/logo.png">
+</head>
+<body>
+    
+    <header>
+        <a href="/" class="home-button">Home</a>
+        <a href="/" class="logo">
+            <img src="sliki/logo.png" alt="Logo">
+        </a>
+        <form id="form">
+        <input 
+            type="text" 
+            id="search" 
+            placeholder="Prebaraj" 
+            class="search">
+            </form>
+
+            
+    </header>
+
+
+    
+    <div id="tags"></div>
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+        
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
+
+      </div>
+    <main id="main"></main>
+    <div class="pagination">
+        <div class="page" id="prev">Prethodna Strana</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Sledna strana</div>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Aplikacija za filmovi. Site prava se zadrzani.</p>
+        </div>
+    </footer>
+    
+
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
